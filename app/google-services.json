@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "307073884103",
+    "firebase_url": "https://tictactoe-2770d.firebaseio.com",
+    "project_id": "tictactoe-2770d",
+    "storage_bucket": "tictactoe-2770d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307073884103:android:a40c73278a44fc6f",
+        "android_client_info": {
+          "package_name": "com.game.optim.krnol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307073884103-d8mor9nregmoov0u5tu495fnl91f6cua.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.game.optim.krnol",
+            "certificate_hash": "ffd89482bd712274a6a621cf9e223b8910f44ff7"
+          }
+        },
+        {
+          "client_id": "307073884103-s7nk8oagusfphat1t3d4c4m3f1v8d4a9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmJsVArc0MGRXg6PGyyVtqaUXIrVbZgxw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307073884103-s7nk8oagusfphat1t3d4c4m3f1v8d4a9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
