@@ -3,8 +3,6 @@ package com.game.optim.krnol.ui;
 import android.content.Context;
 import android.support.v7.widget.AppCompatButton;
 
-import com.game.optim.krnol.GameActivity;
-
 public class Cell extends AppCompatButton {
 
     public enum State {
@@ -17,7 +15,7 @@ public class Cell extends AppCompatButton {
     }
 
     private State state;
-    private OnAfterTurnClickListener click;
+    private AfterTurnListener afterTurnListener;
 
     private int column;
     private int row;
@@ -28,14 +26,14 @@ public class Cell extends AppCompatButton {
             if (isEnabled()) {
                 if (state.equals(State.EMPTY)) {
                     setEnabled(false);
-                    click.afterTurn(row, column);
+                    afterTurnListener.afterTurn(row, column);
                 }
             }
         });
     }
 
-    public void setOnClick(OnAfterTurnClickListener onClick) {
-        this.click = onClick;
+    public void setAfterTurnListener(AfterTurnListener onClick) {
+        this.afterTurnListener = onClick;
     }
 
     public void setCoordinates(int row, int column) {
@@ -47,9 +45,9 @@ public class Cell extends AppCompatButton {
         return state;
     }
 
-    public void setState(GameActivity.Turn turn) {
-        String buttonText = turn.equals(GameActivity.Turn.MY) ? "Крестик" : "Нолик";
-        state = turn.equals(GameActivity.Turn.MY) ? State.NAUGHT : State.CROSS;
+    public void setState(Turn turn) {
+        String buttonText = turn.equals(Turn.MY) ? "Крестик" : "Нолик";
+        state = turn.equals(Turn.MY) ? State.NAUGHT : State.CROSS;
         setText(buttonText);
     }
 

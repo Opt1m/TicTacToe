@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.game.optim.krnol.GameActivity">
+    tools:context="com.game.optim.krnol.activity.AbstractGameActivity">
 
-   <com.game.optim.krnol.ui.Field
+   <com.game.optim.krnol.ui.AbstractField
        android:id="@+id/field"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content">
 
-   </com.game.optim.krnol.ui.Field>
+   </com.game.optim.krnol.ui.AbstractField>
 
 </LinearLayout>
